@@ -1,6 +1,6 @@
 {
   "name": "{{name}}",
-  "version": "{{version}}",
+  "version": "1.0.0",
   "description": "{{description}}",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "webpack",
     "template"
   ],
-  "author": "{{author}}",
+  "author": "https://github.com/fuyan-run",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -63,7 +63,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://www.npmjs.com"
+    "registry": "http://npm.taimei.com/"
   },
   "engines": {
     "node": ">=10"
