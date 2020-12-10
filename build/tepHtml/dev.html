@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!-- 引用顺序很重要
+        react-> react-dom ->
+        moment -> moment/locale/zh-cn? ->
+        antd -> antd-with-locales? ->
+        polyfill? ->
+        antd.min.css
+    -->
+
+    <!-- antd css -->
+    <link href="//static.mobilemd.cn/public/lib/tms-common-vendor/1.0.0/tms-common-vendor.development.6fd9b427.css" rel="stylesheet" />
+    
+    <!-- react, react-dom, antd, moment资源合并在一起的请求文件 -->
+    <script src="//static.mobilemd.cn/public/lib/tms-common-vendor/1.0.0/tms-common-vendor.development.de9ce826.js"></script>
+    
+    <script src="//static.mobilemd.cn/public/lib/react-router-dom/4.2.2/react-router-dom.min.js"></script>
+
+    <script src="//noobweb.cc/public/files/axios.min.js"></script>
+
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
