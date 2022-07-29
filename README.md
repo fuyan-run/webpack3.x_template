@@ -19,5 +19,3 @@
 #### 默认开发library，依赖都是靠外部 所以 `dependencies` 为空
 #### 如有需要，可以将 `peerDependencies` 添加到 `dependencies`
 
-*antd 3.x 和 antd 4.x 的样式 貌似能通用*
-*这里就不打包antd 3.x 样式进去了， 遇到样式问题再做改进*
