@@ -56,7 +56,15 @@ module.exports = {
                             hmr: process.env.NODE_ENV === 'development'
                         },
                     },
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                auto: (resourcePath) => resourcePath.endsWith('.module.less'),
+                                localIdentName: '__[local]_[hash:base64:10]',
+                            },
+                        }
+                    },
                     'less-loader',
                 ]
             },
@@ -73,7 +81,15 @@ module.exports = {
                             hmr: process.env.NODE_ENV === 'development'
                         },
                     },
-                    'css-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                auto: (resourcePath) => resourcePath.endsWith('.module.less'),
+                                localIdentName: '__[local]_[hash:base64:10]',
+                            },
+                        }
+                    },
                 ]
             },
             {
@@ -123,28 +139,4 @@ module.exports = {
             React: 'react',
         })
     ],
-    // optimization: {
-    //     splitChunks: {
-    //         chunks: 'all',
-    //         minSize: 30000,
-    //         minChunks: 1,
-    //         maxAsyncRequests: 6,
-    //         maxInitialRequests: 3,
-    //         automaticNameDelimiter: '~',
-    //         automaticNameMaxLength: 30,
-    //         cacheGroups: {
-    //             defaultVendors: {
-    //                 test: /[\\/]node_modules[\\/]/,
-    //                 priority: -10,
-    //                 filename: './common/[name].[hash:6].js'
-    //             },
-    //             default: {
-    //                 minChunks: 2,
-    //                 priority: -20,
-    //                 reuseExistingChunk: true,
-    //                 filename: './common/[name].[hash:6].js'
-    //             }
-    //         }
-    //     }
-    // }
 }
