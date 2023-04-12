@@ -21,7 +21,7 @@ module.exports = {
         chunkFilename: './js/[name].[hash].js'
     },
     resolve: {  
-        extensions: ['.js','.jsx'],
+        extensions: ['.js', '.jsx', '.scss', '.css', 'less', '.ts', '.tsx'],
         alias: {
             '@': pathResolve('../src'),
             'view': pathResolve('../src/view'),
@@ -40,7 +40,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(j|t)sx?$/,
                 exclude: [pathResolve('../node_modules')],
                 use: {
                     loader: 'babel-loader'
