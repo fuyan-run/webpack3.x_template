@@ -7,15 +7,9 @@
 
 1. {outRouter} *外部的路由对象 (注: 为了更好的嵌入到其它系统，不传默认当前match.path为根节点"/")*
 ```
-#### 常用命令(打包命令: npm build-library)和(本地开发: npm start)，多环境可扩展
+#### 常用命令
 ```
 - 本地开发           |  yarn start
-- 打包lib            |  yarn build-library
-- 登录               |  yarn login
-- 升级版本           |  yarn p
-- 发布               |  yarn pub
 ```
-#### 依赖详见 peerDependencies
-#### 默认开发library，依赖都是靠外部 所以 `dependencies` 为空
-#### 如有需要，可以将 `peerDependencies` 添加到 `dependencies`
+
 
