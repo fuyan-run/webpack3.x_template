@@ -1,15 +1,19 @@
-#### webpack5_ts - antd3
+###  默认引用
+
+  #### 1.webpack5
+  #### 2.typescript
+  #### 3.react V16
+  #### 4.react-dom V16
+  #### 5.react-router-dom V4
+  #### 6.antd V3
+  #### 7.prettier
+
 ##### react -ts - antd3
 ```
 --------------
-| 参数的传递 |
+| 本地开发 | -> yarn && yarn start
 --------------
+```
 
-1. {outRouter} *外部的路由对象 (注: 为了更好的嵌入到其它系统，不传默认当前match.path为根节点"/")*
-```
-#### 常用命令
-```
-- 本地开发           |  yarn start
-```
 
 
