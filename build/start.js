@@ -20,7 +20,7 @@ module.exports = merge(base, {
     },
     devServer: {
         static: path.resolve(__dirname, 'dist'),
-        port: CONF.port,
+        // port: CONF.port,
         hot: true,
         historyApiFallback: {
             rewrites: [
