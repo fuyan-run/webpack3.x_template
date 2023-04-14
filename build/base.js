@@ -40,8 +40,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(j|t)sx?$/,
-                exclude: [pathResolve('../node_modules')],
+                test: /\.tsx?$/,
+                use: [
+                    {
+                        loader: 'ts-loader',
+                        options: {
+                            compilerOptions: {
+                                noEmit: false
+                            },
+                        }
+                    }
+                ],
+            },
+            {
+                test: /\.jsx?$/,
                 use: {
                     loader: 'babel-loader'
                 }

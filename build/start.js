@@ -42,33 +42,4 @@ module.exports = merge(base, {
         }),
         new webpack.ProgressPlugin(),
     ]
-        
-    // headers: {
-    //     'Access-Control-Allow-Origin': '*',
-    // },
-    // contentBase: [path.resolve('./src')],
-    // port: '8888',
-    // historyApiFallback: {
-    //     rewrites: [
-    //         {
-    //             from: /^\/trialPartner/,
-    //             to: '/trialPartner/dev.html',
-    //         },
-    //     ],
-    // },
-    // compress: true,
-    // host,
-    // hot: true,
-    // open: true,
-    // inline: true,
-    // noInfo: false,
-    // quiet: false,
-    // clientLogLevel: 'none',
-    // overlay: {
-    //     warnings: true,
-    //     errors: true,
-    // },
-    // openPage: 'trialPartner/publishProject/index',
-    // proxy: mode[process.env.BUILD_ENV],
-    // },
 })
