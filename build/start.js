@@ -10,6 +10,7 @@ const pathResolve = src => {
 }
 module.exports = merge(base, {
     mode: 'development',
+    devtool: 'source-map',
     entry: [
         pathResolve('../src/start.js')
     ],

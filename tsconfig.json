@@ -6,6 +6,7 @@
         "allowJs": true,
         "checkJs": false,
         "jsx": "react",
+        "sourceMap": true,
         "removeComments": true,
         "noEmit": true,
         "pretty": true,
